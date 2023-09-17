@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "93690790300",
+    "firebase_url": "https://daily-earning-b9c82-default-rtdb.firebaseio.com",
+    "project_id": "daily-earning-b9c82",
+    "storage_bucket": "daily-earning-b9c82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93690790300:android:e288971f3fb24c66b84859",
+        "android_client_info": {
+          "package_name": "com.nilscreation.dailyearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcaNM7hzCR42dgIsHhCvRBoS7ylqlC-B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
