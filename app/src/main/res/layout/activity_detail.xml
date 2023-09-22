@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -47,8 +47,11 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@id/btnLayout"
+        android:layout_below="@id/toolbar"
         android:scrollbars="none">
 
         <LinearLayout
@@ -57,7 +60,9 @@
             android:layout_margin="15dp"
             android:background="@drawable/rounded_card"
             android:orientation="vertical"
-            android:padding="15dp">
+            android:paddingHorizontal="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="30dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -105,24 +110,32 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/nunito_bold"
-                android:text="Rummy Perfect"
+                android:text="Marathi Quotes Status is fully free Application for Quotes Status lovers. Here we Daily upload Best Marathi Quotes and Status. This is Best Marathi Status app for WhatsApp, Instagram, Facebook to share quotes with your friends and family.. Marathi Quotes Status is fully free Application for Quotes Status lovers. Here we Daily upload Best Marathi Quotes and Status. This is Best Marathi Status app for WhatsApp, Instagram, Facebook to share quotes with your friends and family.Marathi Quotes Status is fully free Application for Quotes Status lovers. Here we Daily upload Best Marathi Quotes and Status. This is Best Marathi Status app for WhatsApp, Instagram, Facebook to share quotes with your friends and family."
                 android:textColor="@color/primary_text"
                 android:textSize="17sp" />
-
-            <Button
-                android:id="@+id/btnDownload"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/primary"
-                android:fontFamily="@font/nunito_bold"
-                android:padding="16dp"
-                android:text="DOWNLOAD"
-                android:textSize="16sp"
-                app:cornerRadius="15dp" />
 
         </LinearLayout>
 
     </ScrollView>
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            android:backgroundTint="@color/primary"
+            android:fontFamily="@font/nunito_bold"
+            android:padding="16dp"
+            android:text="DOWNLOAD"
+            android:textSize="16sp"
+            app:cornerRadius="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>
